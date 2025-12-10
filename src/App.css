@@ -10,6 +10,9 @@
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+    /* Optimize infinite animation performance by hinting browser to use GPU acceleration */
+    /* will-change is appropriate here since the animation runs continuously */
+    will-change: transform;
   }
 }
 
@@ -22,6 +25,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  /* Use contain for better rendering performance */
+  contain: layout style paint;
 }
 
 .App-link {
