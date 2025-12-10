@@ -1,5 +1,5 @@
 const reportWebVitals = onPerfEntry => {
-  // Only import web-vitals if a valid callback function is provided
+  // Only import web-vitals if onPerfEntry is provided and is a function
   if (onPerfEntry && typeof onPerfEntry === 'function') {
     // Dynamic import only when needed to reduce initial bundle size
     import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {

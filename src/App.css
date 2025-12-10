@@ -10,7 +10,8 @@
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
-    /* Optimize animation performance by hinting browser to use GPU acceleration */
+    /* Optimize infinite animation performance by hinting browser to use GPU acceleration */
+    /* will-change is appropriate here since the animation runs continuously */
     will-change: transform;
   }
 }
